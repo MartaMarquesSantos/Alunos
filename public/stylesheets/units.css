@@ -1,0 +1,27 @@
+table {
+    text-align: left;
+    margin: 10px auto;
+    font-size: 15px;
+    border-collapse: collapse;
+
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th {
+    text-align: left;
+    background-color: violet;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border: 10px pink;
+}
+
+body {
+    display: inline;
+}

@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Learning PLatform</title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <link rel="stylesheet" href="stylesheets/grading.css"/>
+    <script src="javascripts/grading.js"></script>
+
+  </head>
+
+  <body> 
+    <header>
+      <a href="index.html"><img id="avatar" src="/images/student.png"/></a>
+      <section>
+        <h1>Learning Platform</h1>
+        <h2>This platform will help you manage your classes</h2>
+      </section>
+    </header>
+
+    <main>
+        <form>
+            <label for="studentname"> Student Name: </label>
+            <select id="studentname" name="studentname"> </select><p class="error hidden" id="studentP">Please Select Student.</p><br>
+            <br>
+            <label for="unitname"> Unit Name: </label>
+            <select id="unitname" name="unitname"> </select><p class="error hidden" id="unitP">Please Select Unit.</p><br>
+            <br>
+            <label for="projectgrade"> Project Grade: </label>
+            <input type="text" id="projectgrade" name="projectgrade">
+
+            <label for="projectpercentage"> Project Percentage: </label>
+            <input type="text" id="projectpercentage" name="projectpercentage" min="0" max="0" step="0.1">
+            <p class="error hidden" id="projectP">Please fill out project details.</p><br>
+            <br>
+            <label class="half" for="TestGrade"> Test Grade: </label>
+            <input class="half" type="text" id="testgrade" name="testgrade">
+
+            <label class="second" for="TestPercentage"> Test Percentage: </label>
+            <input class="second" type="text" id="testepercentage" name="testpercentage" min="0" max="0" step="0.1"><br>
+            <p class="error hidden" id="testP">Please fill out test details</p>
+            <p class="error hidden" id="sumpercentages">Percentages don't add up to 100.</p><br>
+
+            <input type="button" value="Calculate" value="Calculate">
+            <input type="button" value="Reset" value="ResetResult">
+        
+        </form>
+        <p id="result"></p>
+
+    </main>
+  </body>
+</html>
+
+
